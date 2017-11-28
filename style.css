@@ -1,0 +1,336 @@
+/* 
+Theme Name: Campus Saint-Marc
+Author: Guillaume
+Author URI: https://guillaume.gui
+Description: The de testtwoword
+Version: 1.0
+*/
+body {
+    background: #9b6e4f;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+.page {
+    /* -- Dimension & Positionnement -- */
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    /* -- Décoration -- */
+    margin: 40px auto;
+
+    /* -- Est Equivalent à :
+    margin-top: 40px;
+    margin-bottom : 40px;
+    margin-left : auto;
+    margin-right: auto;
+    margin : 40px auto 40px auto;
+    -- */
+}
+
+.page > p {
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+}
+
+/* ----------------------------
+|          TOP HEADER         |
+------------------------------*/
+
+.topheader {
+    /* -- Dimension & Positionnement -- */
+    width: 100%;
+    height: 30px;
+    float: left;
+
+    /* -- Décoration -- */
+    background-image: linear-gradient(180deg, #FFF, #EEE);
+    border-top-left-radius: 5px;
+}
+
+.topheader p {
+    /* -- Décoration -- */
+    font-family: 'Lato', sans-serif;
+    text-align: right;
+    margin: 0;
+    line-height: 28px;
+    margin: 0 10px 0 0;
+}
+
+.topheader p a {
+    color: #78356b;
+    text-decoration: none;
+}
+
+.topheader p a:hover {
+    text-decoration: underline;
+}
+
+/* ----------------------------
+|            HEADER           |
+------------------------------*/
+
+header {
+    width: 100%;
+    height: 130px;
+    float: left;
+    background: #FFF;
+}
+
+.logo{
+    width: calc(25% - 30px);
+    height: auto;
+    float: left;
+    margin: 10px 0 0 30px;
+}
+
+.logo img {
+    height: 110px;
+}
+
+/* ----------------------------
+|        MENU DU HEADER        |
+------------------------------*/
+
+nav {
+    width: 75%;
+    height: 100%;
+    float: left;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 125px;
+}
+
+nav ul li a:hover,
+nav ul li.current a {
+    color: #78356b;
+}
+
+/* ----------------------------
+|         EL PROJETOR         |
+------------------------------*/
+
+#projecteur {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+#projecteur img {
+    width: 100%;
+    height: auto;
+}
+
+/* ----------------------------
+|       ZONE DE CONTENU       |
+------------------------------*/
+
+section {
+    /* -- Dimensions et Positionnement -- */
+    width: 100%;
+    height: auto;
+    float: left;
+    /* -- Décoration -- */
+    background-color: white;
+    margin-top:-4px;
+}
+
+section aside {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+section aside img {
+    width: 100%;
+    max-width: 100%;
+}
+
+section article {
+    /* -- Dimensions et Positionnement -- */
+    width: 50%;
+    height: auto;
+    float: left;
+    /* -- Décoration -- */
+    padding: 1% 5% 0 5%;
+    box-sizing: border-box;
+}
+
+section article h3 {
+    text-align: center;
+    font-weight: normal;
+}
+
+section article p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #000;
+    text-align: justify;
+}
+
+article p span {
+    color:#a51f8b;
+}
+
+/* ----------------------------
+|         PARTENAIRES         |
+------------------------------*/
+.partenaires {
+    /* -- Dimensions et Positionnement -- */
+    width: 100%;
+    height: auto;
+    float: left;
+    /* -- Décoration -- */
+    background-image: linear-gradient(180deg, #EEE 0%, #FFF 30%);
+    margin-top: -4px;
+    padding-bottom: 20px;
+}
+
+.partenaires h2 {
+    text-align: center;
+    font-weight: normal;
+}
+
+.partenaires ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.partenaires ul li {
+    width: calc(98% / 4);
+    display: inline-block;
+}
+
+.partenaires ul li img {
+    max-width: 100%;
+    /* width: 50%; */
+    height: 50px;
+    /* filter: grayscale(100%); */
+}
+
+.wpls-logo-showcase .wpls-logo-cnt.slick-slide img {
+    height: 90px;
+    border: 1px solid transparent;
+}
+
+/* ----------------------------
+|        PIED DE PAGE         |
+------------------------------*/
+
+footer {
+    width: 100%;
+    height: auto;
+    float: left;
+    background: #dbd7d2;
+    padding-bottom: 40px;
+}
+
+/* --
+    GOOGLE MAP
+    -- */
+
+    .gmap {
+        /* -- Dimension & Positionnement -- */
+        width: calc( (100% / 3) - 10px);
+        float: left;
+        /* -- Décoration -- */
+        margin-left: 10px;
+    }
+
+/* --
+    NEWSLETTER
+    -- */
+
+    .newsletter {
+        /* -- Dimension & Positionnement -- */
+        width: calc( (100% / 3) - 10px);
+        float: left;
+        /* -- Décoration -- */
+        margin-left: 10px;
+    }
+
+    .newsletter form {}
+
+    .newsletter fieldset {
+        font-family: 'Lato', sans-serif;
+        border-radius: 8px;
+        border: 2px solid #FFF;
+        color: #FFF;
+        height: 180px;
+    }
+
+    .newsletter legend {}
+
+    .newsletter input {
+        width: 91%;
+        height: 25px;
+        margin-bottom: 5px;
+        padding: 5px 10px;
+    }
+
+    .newsletter input[type=submit] {
+        width: 100%;
+        height: 30px;
+        border: 0;
+        background: #FFF;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+    } 
+
+/* --
+    CONTACT
+    -- */
+
+    .contact {
+        /* -- Dimension & Positionnement -- */
+        width: calc( (100% / 3) - 10px);
+        float: left;
+        /* -- Décoration -- */
+        margin-left: 10px;
+    }
+
+    .contact h3 {
+        color: #FFF;
+        padding-left: 20px;
+        font-family: 'Lato', sans-serif;
+        font-weight: normal;
+    }
+    .contact address {
+        color: #FFF;
+        padding-left: 20px;
+        font-family: 'Lato', sans-serif;
+    }
+    .contact address strong {
+        font-size: 20px;
+    }
+    .contact address a {
+        color: #FFF;
+        text-decoration: none;
+    }
+    .contact address a:hover {
+        text-decoration: underline;
+    }
